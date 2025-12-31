@@ -1,0 +1,326 @@
+.session-output {
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.session-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.session-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  gap: 24px;
+}
+
+.session-top h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.session-info {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge.light {
+  background-color: rgba(52, 168, 83, 0.15);
+  color: #34a853;
+}
+
+.badge.medium {
+  background-color: rgba(251, 188, 5, 0.15);
+  color: #fbbc05;
+}
+
+.badge.high {
+  background-color: rgba(220, 20, 60, 0.15);
+  color: var(--crimson);
+}
+
+.info-text {
+  color: #999;
+  font-size: 15px;
+}
+
+.session-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  background-color: var(--medium-gray);
+  border: 1px solid var(--light-gray);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-gray);
+  border-color: var(--crimson);
+}
+
+.btn-danger {
+  padding: 10px 20px;
+  background-color: rgba(220, 20, 60, 0.1);
+  border: 1px solid var(--crimson);
+  border-radius: 6px;
+  color: var(--crimson);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-danger:hover {
+  background-color: var(--crimson);
+  color: #fff;
+}
+
+.time-breakdown {
+  background-color: var(--dark-gray);
+  border: 1px solid var(--medium-gray);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.breakdown-header {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.breakdown-bar {
+  display: flex;
+  height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--medium-gray);
+}
+
+.breakdown-segment {
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.breakdown-segment:hover {
+  opacity: 0.8;
+}
+
+.drills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.drill-card {
+  background-color: var(--dark-gray);
+  border: 1px solid var(--medium-gray);
+  border-radius: 12px;
+  padding: 32px;
+  transition: all 0.2s;
+}
+
+.drill-card:hover {
+  border-color: var(--crimson);
+}
+
+.drill-header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.drill-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--crimson);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.drill-title-section {
+  flex: 1;
+}
+
+.drill-title-section h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.drill-category {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: var(--medium-gray);
+  border-radius: 4px;
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+  line-height: 1;
+}
+
+.favorite-btn:hover {
+  color: var(--crimson);
+  transform: scale(1.1);
+}
+
+.favorite-btn.active {
+  color: var(--crimson);
+}
+
+.drill-description {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.drill-meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.meta-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background-color: var(--medium-gray);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.meta-badge.intensity-light {
+  background-color: rgba(52, 168, 83, 0.15);
+  color: #34a853;
+}
+
+.meta-badge.intensity-medium {
+  background-color: rgba(251, 188, 5, 0.15);
+  color: #fbbc05;
+}
+
+.meta-badge.intensity-high {
+  background-color: rgba(220, 20, 60, 0.15);
+  color: var(--crimson);
+}
+
+.meta-icon {
+  font-size: 16px;
+}
+
+.drill-section {
+  margin-bottom: 24px;
+}
+
+.drill-section:last-child {
+  margin-bottom: 0;
+}
+
+.drill-section h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.instructions-list,
+.cues-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.instructions-list li,
+.cues-list li {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.instructions-list li:last-child,
+.cues-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .session-content {
+    padding: 40px 20px;
+  }
+
+  .session-top {
+    flex-direction: column;
+  }
+
+  .session-top h1 {
+    font-size: 28px;
+  }
+
+  .session-actions {
+    width: 100%;
+  }
+
+  .btn-secondary,
+  .btn-danger {
+    flex: 1;
+  }
+
+  .drill-card {
+    padding: 20px;
+  }
+
+  .drill-header {
+    flex-wrap: wrap;
+  }
+}
